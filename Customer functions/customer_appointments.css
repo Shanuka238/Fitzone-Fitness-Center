@@ -1,0 +1,300 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  
+                url("../Images/AB1.jpg") no-repeat center center/cover;
+    padding-top: 100px;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 50px;
+    height: auto;
+}
+
+.brand h1 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    margin: 0px 19px;
+    scroll-margin-right: 50px;
+    align-items: flex-end;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    border-bottom: 3px solid transparent;
+    align-items: center;
+
+}
+
+.navbar a:hover {
+    color: #00ffff;
+    border-bottom: 3px solid #00ffff;
+}
+
+.nav-btn {
+    background-color: #00aeff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: background 0.5s ease;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    background-color: #80eeff;
+    box-shadow: 0 0 19px #80eeff;
+    transition: 0.5s ease;
+}
+
+
+
+
+.content {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 7rem;
+    text-align: center;
+    margin-top: 5rem;
+    background: #222; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5); 
+    color: #00ccff;
+}
+
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00bfff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    text-align: center;
+    table-layout: fixed;
+}
+
+
+.content table th,
+.content table td {
+    padding: 12px;
+    border: 1px solid #00ccff;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.content table th {
+    background: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.content table td {
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.content table td.wrap-text {
+    white-space: normal;
+    word-break: break-all;
+}
+
+
+.content table tbody tr:hover {
+    background: #333;
+    transition: background 0.3s ease;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+
+
+
+
+
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00ccff;
+   
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .brand h1 {
+        font-size: 17px;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #222;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        margin: 15px 0;
+    }
+
+    .nav-btn {
+      padding: 10px 5px;
+    }
+    
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #content table{
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+}
