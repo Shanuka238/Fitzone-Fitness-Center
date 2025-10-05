@@ -5,20 +5,20 @@ FitZone is a fitness center management platform for class scheduling, booking, t
 
 User
 
-Create and book classes or private training sessions (CRUD)
-Contact staff by submitting queries or requests (CRUD)
-View sent messages and responses from staff (CRUD)
-Manage bookings and appointments (CRUD)
+    Create and book classes or private training sessions (CRUD)
+    Contact staff by submitting queries or requests (CRUD)
+    View sent messages and responses from staff (CRUD)
+    Manage bookings and appointments (CRUD)
 
 Admin
 
-Manage user accounts (CRUD)
-Manage classes (schedules) (CRUD)
-Manage trainer availability (CRUD)
+    Manage user accounts (CRUD)
+    Manage classes (schedules) (CRUD)
+    Manage trainer availability (CRUD)
 
 Staff
 
-Manage classes (schedules) (CRUD)
-Manage appointments and bookings (CRUD)
-Manage queries (CRUD)
-View trainer availability (CRUD)
+    Manage classes (schedules) (CRUD)
+    Manage appointments and bookings (CRUD)
+    Manage queries (CRUD)
+    View trainer availability (CRUD)
